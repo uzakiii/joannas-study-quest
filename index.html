@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Joanna's Study Quest</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<audio id="lofi" loop>
+<source src="lofi.mp3">
+</audio>
+
+<!-- LOCK SCREEN -->
+
+<div id="lockscreen">
+
+<h1>🔒 Study Quest</h1>
+
+<div class="keypad"></div>
+
+</div>
+
+
+<!-- TITLE SCREEN -->
+
+<div id="title" class="hidden">
+
+<h1>Joanna's Study Quest</h1>
+
+<button onclick="startGame()">Start Study Mode</button>
+
+</div>
+
+
+<!-- GAME -->
+
+<div id="game" class="hidden">
+
+<div id="topbar">
+
+<div id="xp">XP: 0</div>
+
+<div id="streak">🔥 Streak: 0</div>
+
+</div>
+
+
+<div id="room">
+
+<div id="window"></div>
+
+<div id="desk">
+
+💻 📚 ☕ 🌱
+
+</div>
+
+<div id="pet">🦕</div>
+
+<div id="uzik">🧑‍🦱</div>
+
+<div id="spiderman">🕷</div>
+
+</div>
+
+
+<div id="controls">
+
+<button onclick="startTimer(5)">5 min</button>
+<button onclick="startTimer(15)">15 min</button>
+<button onclick="startTimer(25)">Pomodoro</button>
+
+<button onclick="addXP()">I finished a task</button>
+
+</div>
+
+
+<div id="timer">00:00</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
